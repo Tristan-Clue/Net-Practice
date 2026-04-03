@@ -38,14 +38,20 @@ A group of connected devices that can communicate with each other. Devices can i
 A well known network would be the **Local Area Network (LAN)**, which is a network of devices that are connected in a local area, like your home or a cafe. Above that we have something called a **Wide Area Network (WAN)**, which is a network of many LANs, which covers large distances. These networks are connected in many ways ranging fromshort distance (Bluetooth, Ethernet), medium (Fiber Optics, Microwave), to far (Leased Lines, Satellite links).<br>
 
 ##### Types of Network
-`Wired (Server):`
-`Wired (Internet):`
-`Wireless (Wi-Fi):`
-`Wireless (Satellite):`
+Wired (Server):
+>
+Wired (Internet):
+>
+Wireless (Wi-Fi):
+>
+Wireless (Satellite):
+>
 
 ##### Network Devices
-`Switch: A hardware device that connects multiple devices together. It uses MAC addressing to identify where the data packets should go to.`
-`Router: A device that routes traffic between networks, like your home network to the Internet.`
+- Switch: 
+> A hardware device that connects multiple devices together. It uses MAC addressing to identify where the data packets should go to.
+- Router: 
+> A device that routes traffic between networks, like your home network to the Internet.
 
 Addressing the elephant in the room...
 We've heard of it, we're scared our own gets revealed, but
