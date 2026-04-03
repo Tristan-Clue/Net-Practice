@@ -202,6 +202,7 @@ For a simple setup, let's say a small company that has 2 departments, IT and Acc
 Solutions for Net Practice Levels:
 <details>
 <summary>Level 1:</summary>
+![level-01](/src/levels/level-01.png)
 </details>
 <details>
 <summary>Level 2:</summary>
@@ -229,4 +230,4 @@ Solutions for Net Practice Levels:
 </details>
 <details>
 <summary>Level 10:</summary>
-</details>
+</details>/
