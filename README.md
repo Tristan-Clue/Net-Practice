@@ -176,3 +176,57 @@ To subnet, we manipulate the host portion of the address, network portion will r
 > If you noticed, you'll realize that the leftmost bit of the host part is the indication of the subnet. Since that's the bit that will indicate the subnet id. The number of subnet is equivalent to 2 to the power of bits used for subnetting<br> i.e 2 bits used == 4 subnets, etc...
 > Also one thing to note when it comes to subnetting, each subnets are required to waste 2 IP addresses, which is the first and the last allocated address (Subnet-1 192.168.5.0 and 192.168.5.127), these are used as the network ID and the broadcast address for the subnet.
 
+#### Gateways
+Gateway is a network device that connects two different networks. They manage the traffic for the data packets sent, acting as a "gate" to determine where the packets are routed to and so on.<br>
+A default gateway can be described as a route for when the data packet's routing information is not found within the routing table for the device, i.e, the host not knowing where to send the data packets.<br>
+The data packets would then be sent to the default gateway of that device.
+
+#### Example of configuring a network
+For a simple setup, let's say a small company that has 2 departments, IT and Account.
+<br>
+<blockquote>
+    To separate the networks, we would need to split them into 2 subnets.<br>
+    So given an IP of 178.245.12.0 (Class C network), we create a subnet mask of `255.255.255.128 or /25`.
+    Giving 178.245.12.0 - 128.245.12.127 and 178.245.12.128 - 178.245.12.255
+    Now, any devices that are connected to the network will be isolate to its own subnet. Data within the subnet will also be contained within the subnet and not share to the other subnet.
+    <br>
+    Now let's say we want to send information from one subnet to the other, we can't just send it since it's considered a "different" network.<br>
+    To do this, we would need to setup a routing table on the host (the user device in this context), to route the data to it's respective subnet.
+    > Sending data from 178.245.12.3 to 178.245.12.178
+    > We set up a route on the host for data sent to 178.245.12.128/25, it sends to the router.
+    > This way, when information from the host is sent to said network, it will be sent to the router as that's the designated route for it.
+    >> Alternatively, if we want any data that is sent out to just send to the router, we can just use 0.0.0.0/0 or `default`. Which says "If unsure where destination, send to this route".
+    >> This is needed to set up for both sides if we want to both sides to communicate with each other.
+</blockquote>
+
+Solutions for Net Practice Levels:
+<details>
+<summary>Level 1:</summary>
+</details>
+<details>
+<summary>Level 2:</summary>
+</details>
+<details>
+<summary>Level 3:</summary>
+</details>
+<details>
+<summary>Level 4:</summary>
+</details>
+<details>
+<summary>Level 5:</summary>
+</details>
+<details>
+<summary>Level 6:</summary>
+</details>
+<details>
+<summary>Level 7:</summary>
+</details>
+<details>
+<summary>Level 8:</summary>
+</details>
+<details>
+<summary>Level 9:</summary>
+</details>
+<details>
+<summary>Level 10:</summary>
+</details>
