@@ -176,16 +176,31 @@ To subnet, we manipulate the host portion of the address, network portion will r
 > If you noticed, you'll realize that the leftmost bit of the host part is the indication of the subnet. Since that's the bit that will indicate the subnet id. The number of subnet is equivalent to 2 to the power of bits used for subnetting<br> i.e 2 bits used == 4 subnets, etc...
 > Also one thing to note when it comes to subnetting, each subnets are required to waste 2 IP addresses, which is the first and the last allocated address (Subnet-1 192.168.5.0 and 192.168.5.127), these are used as the network ID and the broadcast address for the subnet.
 
-#### Subnet Cheat Sheet (For class C)
+#### Subnet Cheat Sheet
 | Subnet Mask     | No. of Hosts | No. of Addr  | CIDR         |
 | :-------------: | :----------: | :----------: | :----------: |
 | 255.255.255.252 | 2            | 4            | /30          |
-|
-|
-|
-|
-|
-|
+| 255.255.255.248 | 6            | 8            | /29          |
+| 255.255.255.240 | 14           | 16           | /28          |
+| 255.255.255.224 | 30           | 32           | /27          |
+| 255.255.255.192 | 62           | 64           | /26          |
+| 255.255.255.128 | 126          | 128          | /25          |
+| 255.255.255. 0  | 254          | 256          | /24          |
+| 255.255.254. 0  | 510          | 512          | /23          |
+| 255.255.252. 0  | 1,022        | 1,024        | /22          |
+| 255.255.248. 0  | 2,046        | 2,048        | /21          |
+| 255.255.240. 0  | 4,094        | 4,096        | /20          |
+| 255.255.224. 0  | 8,190        | 8,192        | /19          |
+| 255.255.192. 0  | 16,382       | 16,384       | /18          |
+| 255.255.128. 0  | 32,766       | 32,768       | /17          |
+| 255.255.0.0     | 65,534       | 65,536       | /16          |
+| 255.252.0.0     | 65,534       | 65,536       | /16          |
+| 255.248.0.0     | 65,534       | 65,536       | /16          |
+| 255.240.0.0     | 65,534       | 65,536       | /16          |
+| 255.224.0.0     | 65,534       | 65,536       | /16          |
+| 255.192.0.0     | 65,534       | 65,536       | /16          |
+| 255.128.0.0     | 65,534       | 65,536       | /16          |
+| 255.0.0.0       | 65,534       | 65,536       | /16          |
 
 #### Gateways
 Gateway is a network device that connects two different networks. They manage the traffic for the data packets sent, acting as a "gate" to determine where the packets are routed to and so on.<br>
