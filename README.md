@@ -7,7 +7,7 @@ The Basics of Networking - The 42 Way
 NetPractice, a 42 project that is designed to introduce us to the basic of computer networking.<br>
 We will learn about configuration of IP Addresses, connecting devices through a router, and understand the role of a gateway within a network.<br>
 The goal of this project: To understand the basic concepts of networking and be able to configure small-scale networks through a series of exercises given by the project.
-<br><br>
+<br>
 #### Brief Overview
 - Network
     - Types of Network (WIP)
@@ -42,6 +42,7 @@ For Training/Practice:
 For Evaluation:
 - Click on the Evaluation tab and hit start.
 <br>
+
 #### Submission Requirement
 - Cadets are required to submit all 10 levels of Net Practice and have those configurations downloaded and pushed to the repository.
 - A README is also required for documentation.
@@ -83,13 +84,13 @@ The modern Internet doesn't strictly follow the OSI Model anymore (ditched for a
 > For example, when someone says, "It's a layer 3 issue.", it would mean there's a problem like a network configuration. Or maybe a layer 1 issue, which would mean the physical layer like maybe the cable is loose or the switch broke.
 
 They layers are ordered in descending order by how the data travels:
-> 7. Application layer: SMTP, FTP, Telnet
-> 6. Presentation layer: Format Data, Encryption
-> 5. Session layer: Start & Stop Sessions
-> 4. Transport layer: TCP, UDP, Port Numbers
-> 3. Network layer: IP Address, Routers
-> 2. Data Link layer: MAC Address, Switches
-> 1. Physical layer: Cable, Network Interface Cards, Hubs
+> 7\. Application layer: SMTP, FTP, Telnet
+> 6\. Presentation layer: Format Data, Encryption
+> 5\. Session layer: Start & Stop Sessions
+> 4\. Transport layer: TCP, UDP, Port Numbers
+> 3\. Network layer: IP Address, Routers
+> 2\. Data Link layer: MAC Address, Switches
+> 1\. Physical layer: Cable, Network Interface Cards, Hubs
 
 
 Nowadays, people use a more simpler Internet protocol suite called:
@@ -115,8 +116,8 @@ Why UDP? Although UDP doesn't have the reliability as TCP, it is low latency, ma
 Port number is used to identify a specific process or service on a device, distinguishing traffic on a single IP address. It routes the data to the appropriate application in the device. It is part of the Transport Layer.<br>
 Common port numbers would be SSH (22), HTTP (80), HTTPS (443), etc...<br>
 These usually come right after the IP address separated by a colon, eg. 121.353.x.12:80<br>
-> 0-1023 are well know port numbers
-> 1024-49151 are registered port numbers
+> 0-1023 are well know port numbers<br>
+> 1024-49151 are registered port numbers<br>
 > 49152-65535 are dynamically assign port numbers, which are randomly generated for the local services on that address.
 
 ### What is an IP Address?
@@ -141,29 +142,29 @@ How it works is that the network portion indicates whether devices shares the sa
 So if there's two sets of IP Addresses that has the same network portion, would indicate they share the same network.<br><br>
 
 > IPV4 are split to 5 classes as below:
->> Class A - For networks with large number of hosts
->> Public IP Range: 1.0.0.0 to 126.255.255.255
->> Private IP Range: 10.0.0.0 to 10.255.255.255
->> Special IP Range: 127.0.0.1 to 127.255.255.255
->> Subnet Mask: 255.0.0.0 (8 bits)
->> Number of Networks: 126
->> Number of Hosts per network: 16,777,214
+>> Class A - For networks with large number of hosts<br>
+>> Public IP Range: 1.0.0.0 to 126.255.255.255<br>
+>> Private IP Range: 10.0.0.0 to 10.255.255.255<br>
+>> Special IP Range: 127.0.0.1 to 127.255.255.255<br>
+>> Subnet Mask: 255.0.0.0 (8 bits)<br>
+>> Number of Networks: 126<br>
+>> Number of Hosts per network: 16,777,214<br>
 > Class A IP address range are typically used byb ISP (Internet Service Providers) and large corporations.
 
->> Class B - For medium to large sized networks
->> Public IP Range: 128.0.0.0 to 191.255.255.255
->> Private IP Range: 172.16.0.0 to 172.31.255.255
->> Subnet Mask: 255.255.0.0 (16 bits)
->> Number of Networks: 16,382
->> Number of Hosts per Network: 65,534
+>> Class B - For medium to large sized networks<br>
+>> Public IP Range: 128.0.0.0 to 191.255.255.255<br>
+>> Private IP Range: 172.16.0.0 to 172.31.255.255<br>
+>> Subnet Mask: 255.255.0.0 (16 bits)<br>
+>> Number of Networks: 16,382<br>
+>> Number of Hosts per Network: 65,534<br>
 > Class B IP Address range are used by universities and medium-sized businesses
 
->> Class C - Used in small local are networks (LANs)
->> Public IP Range: 192.0.0.0 to 223.255.255.255
->> Private IP Range: 192.168.0.0 to 192.168.255.255
->> Subnet Mask: 255.255.255.0 (24 bits)
->> Number of Networks: 2,097,150
->> Number of Hosts per Network: 254
+>> Class C - Used in small local are networks (LANs)<br>
+>> Public IP Range: 192.0.0.0 to 223.255.255.255<br>
+>> Private IP Range: 192.168.0.0 to 192.168.255.255<br>
+>> Subnet Mask: 255.255.255.0 (24 bits)<br>
+>> Number of Networks: 2,097,150<br>
+>> Number of Hosts per Network: 254<br>
 > Class C IP Address range are used by small businesses and home networks<br>
 
 > There is also Class D and E, which are used for multicasting and research purposes respectively.<br>
