@@ -3,35 +3,57 @@
 # Net-Practice
 The Basics of Networking - The 42 Way
 
-To note:
-- Computer Networking
-- IP Addresses
-- Routers
-- Switches
-- Gateways
-- TCP/IP Addressing
-- Configurating small-scale networks
-- Subnet Mask
-- Default Gateway
-
-Requirements:
-
 ## Description
-- Project presentation
-- Goals
-- Brief Overview
-> Mentions of network concepts studied, such as: TCP/IP Addressing, subnet mask,
-default gateway, routers and switches, OSI layers, etc.
+NetPractice, a 42 project that is designed to introduce us to the basic of computer networking.<br>
+We will learn about configuration of IP Addresses, connecting devices through a router, and understand the role of a gateway within a network.<br>
+The goal of this project: To understand the basic concepts of networking and be able to configure small-scale networks through a series of exercises given by the project.
+<br><br>
+#### Brief Overview
+- Network
+    - Types of Network (WIP)
+    - Network Devices
+- OSI Model
+- TPC/IP
+- UDP
+- What is an IP Address
+- Subnet
+    - Binary
+    - Why Subnetting
+    - How-to Subnet
+    - Subnet Cheat Sheet
+- Gateways
+- Examples of configuring small-scale network
+- NetPractice Exercises
 
 ## Instructions
-- Compilations/Installations/Execution
-> How to run the training interface, export configuration, submission requirements
+1. Download the Net_Practice tar file from the Net Practice project page
+2. Extract the contents using `tar -xf <file_name>`
+3. Run index.html on your web browser
+<br>
+For Training/Practice:
+- Click on the Training tab
+- Enter your intranet login and hit start.
+- On the top of your window, you will see the goals you need to complete, along with 2 buttons available:
+    - \[Check Again\] verifies the configuration
+    - \[Get My Config\] lets you download the configuration (used for submission)
+- When the level is complete, the \[Next Level\] button will appear.
+> One thing to take note of is that on the bottom right of the window, you can see the logs, which are helpful to understand and debug.
+<br>
+For Evaluation:
+- Click on the Evaluation tab and hit start.
+<br>
+#### Submission Requirement
+- Cadets are required to submit all 10 levels of Net Practice and have those configurations downloaded and pushed to the repository.
+- A README is also required for documentation.
+- During evaluation, the evaluatee will also need to complete 3 levels on Net Practice within a set time during the evaluation on Evaluation mode. 
 
 ## Resource
-- References to topic (Video, documentation, etc...)
-- How AI was used and specify which tasks and part was used
+- [Cisco CCNA 200-301](https://youtube.com/playlist?list=PLF1hDMPPRqGxpYdo0ctaa7MxfOi9vjs1u&si=HPA8i35canmUCmmt) on Youtube
+    - Explanations on Computer Networking as a whole and more
+- [GeeksforGeeks](https://www.geeksforgeeks.org/computer-networks/basics-computer-networking/) and other related resources on-site
 
-> Submission details must include the 10 exported configuration files for each level
+
+---
 
 ### Network
 A group of connected devices that can communicate with each other. Devices can include and not limited to: Desktop, Phones, Printers, Switches, Routers, etc...<br>
@@ -225,68 +247,87 @@ Solutions for Net Practice Levels:
 <img src="/src/levels/level-01.png">
 
 - Just 2 sets of devices connected to each other. So configure the addresses to be in the same network for each pair.
+
 </details>
 <details>
 <summary>Level 2:</summary>
 <img src="/src/levels/level-02.png">
+
 - Here we are introduced to **Subnet Mask**, so instead of just configuring the IP addresses to the same network, we must also make sure that the address is within the same subnet.
 - So based of the given subnet mask, we just have to calculate which subnet it is in and configure the IP address of the respective device.
+
 </details>
 <details>
 <summary>Level 3:</summary>
 <img src="/src/levels/level-03.png">
+
 - Here we have 3 devices and a switch. The switch just passes on the data packets, so we can ignore that.
 - Same as before, we just configure so that the devices are in the same network.
+
 </details>
 <details>
 <summary>Level 4:</summary>
 <img src="/src/levels/level-04.png">
+
 - Here we have a router and 2 other devices. The interfaces at the routers are the different networks that the router is connected to.
 - As before, we just configure so that the devices are in the same network.
     - But for the router, we need to make sure that the interface that we are configuring has to be in a different network as the other interfaces on the router.
+
 </details>
 <details>
 <summary>Level 5:</summary>
 <img src="/src/levels/level-05.png">
+
 - Here we are connecting 2 devices to a router. We also need to form a connection for the 2 devices on different networks.
     - Here we are also introduced to the routing table. So we will have to configure the default route for data to pass through.
     - We do this by setting up the the router interface in the network as the default route for the data to pass through.
 - The router would then be able to check the destination of the data packet and pass it to the valid network (if applicable) it is in.
+
 </details>
 <details>
 <summary>Level 6:</summary>
 <img src="/src/levels/level-06.png">
+
 - Hello Internet, here we have to set up a device to communicate with the Internet.
 - Mainly we need to properly set up the routing table. We do this by:
     - Setup default gateways for the router and device.
     - Setup the destination for the Internet to point to the device's network
+
 </details>
 <details>
 <summary>Level 7:</summary>
 <img src="/src/levels/level-07.png">
+
 - Nothing new other than we are connecting 2 routers together and setting up the routing table for both of them.
 - We just have to make sure that the devices are in **different** networks or subnets for it to work.
+
 </details>
 <details>
 <summary>Level 8:</summary>
 <img src="/src/levels/level-08.png">
+
 - Seems normal, setting up the networks and routing table. But we need to be careful of the given routing table for the Internet.
     - To give Internet access to both Host C and D, we need to make sure that their subnets are within the range of the destination.
     - We would also need to make sure that those subnets are a different subnet to the connected routers.
         - In the example we could see that the routers use x.x.x.60 to 64 within /30. And the Internet access is given to x.x.x.0/26, so 0 to 64.
         - With this information, we would know that the hosts would need to be in network between x.x.x.0 to 60. Also set up submask so both are in different subnet.
+
 </details>
 <details>
 <summary>Level 9:</summary>
 <img src="/src/levels/level-09.png">
+
 - Big graph, but it uses the same concept as all the previous levels. We just need to be aware of the given IP Addresses and submasks.
     - Things we would need to take note of is:
         - Interface R23 uses submask /18, so we'll need to set up Interface R22 and Host C outside of that subnet.
         - In the image above, I've set up so that they are under the same network within the /16 range. So I would use one less routing on the table.
+
 </details>
 <details>
 <summary>Level 10:</summary>
 <img src="/src/levels/level-10.png">
+
 - Most information is given here, so it's not that big of a deal.
 - This is similar to level 8, where we need to make sure that subnets don't intersect with each other, especially for Host 3 and 4.
+
 </details>
