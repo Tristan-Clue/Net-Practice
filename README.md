@@ -223,6 +223,7 @@ Solutions for Net Practice Levels:
 <details>
 <summary>Level 1:</summary>
 <img src="/src/levels/level-01.png">
+
 - Just 2 sets of devices connected to each other. So configure the addresses to be in the same network for each pair.
 </details>
 <details>
