@@ -84,23 +84,23 @@ The modern Internet doesn't strictly follow the OSI Model anymore (ditched for a
 > For example, when someone says, "It's a layer 3 issue.", it would mean there's a problem like a network configuration. Or maybe a layer 1 issue, which would mean the physical layer like maybe the cable is loose or the switch broke.
 
 They layers are ordered in descending order by how the data travels:
-> 7\. Application layer: SMTP, FTP, Telnet
-> 6\. Presentation layer: Format Data, Encryption
-> 5\. Session layer: Start & Stop Sessions
-> 4\. Transport layer: TCP, UDP, Port Numbers
-> 3\. Network layer: IP Address, Routers
-> 2\. Data Link layer: MAC Address, Switches
+> 7\. Application layer: SMTP, FTP, Telnet<br>
+> 6\. Presentation layer: Format Data, Encryption<br>
+> 5\. Session layer: Start & Stop Sessions<br>
+> 4\. Transport layer: TCP, UDP, Port Numbers<br>
+> 3\. Network layer: IP Address, Routers<br>
+> 2\. Data Link layer: MAC Address, Switches<br>
 > 1\. Physical layer: Cable, Network Interface Cards, Hubs
 
 
 Nowadays, people use a more simpler Internet protocol suite called:
 ### TCP/IP
 The Transmission Control Protocol/Internet Protocol model, a more practical model that is being used to this day. It has 5 layers instead of 7:
-> 1. Application Layer: SMTP, FTP, HTTP
-> 2. Transport Layer: TCP, IDP -> Segment
-> 3. Network Layer: IP, Routers -> Packet
-> 4. Data Link Layer: Ethernet, Switches -> Frame
-> 5. Hardware Layer: Cables, Nic
+> 1\. Application Layer: SMTP, FTP, HTTP<br>
+> 2\. Transport Layer: TCP, IDP -> Segment<br>
+> 3\. Network Layer: IP, Routers -> Packet<br>
+> 4\. Data Link Layer: Ethernet, Switches -> Frame<br>
+> 5\. Hardware Layer: Cables, Nic
 
 Information is added by each layer as it goes down the model, before it gets sent to where it needs to go according to the headers that the layers provide. This is called encapsulation.<br>
 TCP is a reliable when it comes to sending and receiving data, as it creates a stable and reliable connection when it transfer data. Which makes it possible to recover half loaded websites or corrupted documents. TCP does through acknowledgements, sequencing, and checksums.<br>
