@@ -202,7 +202,7 @@ For a simple setup, let's say a small company that has 2 departments, IT and Acc
 Solutions for Net Practice Levels:
 <details>
 <summary>Level 1:</summary>
-![level-01](src/levels/level-01.png)
+![level-01](https://github.com/Tristan-Clue/Net-Practice/blob/main/src/levels/level-01.png)
 </details>
 <details>
 <summary>Level 2:</summary>
