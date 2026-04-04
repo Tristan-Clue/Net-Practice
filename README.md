@@ -10,7 +10,6 @@ The goal of this project: To understand the basic concepts of networking and be 
 <br>
 #### Brief Overview
 - Network
-    - Types of Network (WIP)
     - Network Devices
 - OSI Model
 - TPC/IP
@@ -60,16 +59,6 @@ For Evaluation:
 A group of connected devices that can communicate with each other. Devices can include and not limited to: Desktop, Phones, Printers, Switches, Routers, etc...<br>
 A well known network would be the **Local Area Network (LAN)**, which is a network of devices that are connected in a local area, like your home or a cafe. Above that we have something called a **Wide Area Network (WAN)**, which is a network of many LANs, which covers large distances.<br>
 These networks are connected in many ways ranging fromshort distance (Bluetooth, Ethernet), medium (Fiber Optics, Microwave), to far (Leased Lines, Satellite links).<br>
-
-### Types of Network (WIP)
-Wired (Server):
->
-Wired (Internet):
->
-Wireless (Wi-Fi):
->
-Wireless (Satellite):
->
 
 ### Network Devices
 - Switch: 
