@@ -38,7 +38,7 @@ A group of connected devices that can communicate with each other. Devices can i
 A well known network would be the **Local Area Network (LAN)**, which is a network of devices that are connected in a local area, like your home or a cafe. Above that we have something called a **Wide Area Network (WAN)**, which is a network of many LANs, which covers large distances.<br>
 These networks are connected in many ways ranging fromshort distance (Bluetooth, Ethernet), medium (Fiber Optics, Microwave), to far (Leased Lines, Satellite links).<br>
 
-### Types of Network
+### Types of Network (WIP)
 Wired (Server):
 >
 Wired (Internet):
@@ -177,24 +177,24 @@ To subnet, we manipulate the host portion of the address, network portion will r
 > Also one thing to note when it comes to subnetting, each subnets are required to waste 2 IP addresses, which is the first and the last allocated address (Subnet-1 192.168.5.0 and 192.168.5.127), these are used as the network ID and the broadcast address for the subnet.
 
 #### Subnet Cheat Sheet
-| Subnet Mask     | No. of Hosts | No. of Addr   | CIDR         | Subnet Mask     | No. of Hosts | No. of Addr   | CIDR         |
-| :-------------: | :----------: | :-----------: | :----------: | :-------------: | :----------: | :-----------: | :----------: |
-| 255.255.255.252 | 2            | 4             | /30          | 255.252.0.0     | 131,070      | 131,072       | /15          |
-| 255.255.255.248 | 6            | 8             | /29          | 255.248.0.0     | 262,142      | 262,144       | /14          |
-| 255.255.255.240 | 14           | 16            | /28          | 255.240.0.0     | 524,286      | 524,288       | /13          |
-| 255.255.255.224 | 30           | 32            | /27          | 255.224.0.0     | 1,048,574    | 1,048,576     | /12          |
-| 255.255.255.192 | 62           | 64            | /26          | 255.192.0.0     | 2,097,150    | 2,097,152     | /11          |
-| 255.255.255.128 | 126          | 128           | /25          | 255.128.0.0     | 4,194,302    | 4,194,304     | /10          |
-| 255.255.255.0   | 254          | 256           | /24          | 255.0.0.0       | 8,388,606    | 8,388,608     | /9           |
-| 255.255.254.0   | 510          | 512           | /23          | 254.0.0.0       | 8,388,606    | 16,777,216    | /8           |
-| 255.255.252.0   | 1,022        | 1,024         | /22          | 252.0.0.0       | 8,388,606    | 33,554,432    | /7           |
-| 255.255.248.0   | 2,046        | 2,048         | /21          | 250.0.0.0       | 8,388,606    | 67,108,864    | /6           |
-| 255.255.240.0   | 4,094        | 4,096         | /20          | 248.0.0.0       | 8,388,606    | 134,217,728   | /5           |
-| 255.255.224.0   | 8,190        | 8,192         | /19          | 240.0.0.0       | 8,388,606    | 268,435,456   | /4           |
-| 255.255.192.0   | 16,382       | 16,384        | /18          | 224.0.0.0       | 8,388,606    | 536,870,912   | /3           |
-| 255.255.128.0   | 32,766       | 32,768        | /17          | 192.0.0.0       | 8,388,606    | 1,073,741,824 | /2           |
-| 255.255.0.0     | 65,534       | 65,536        | /16          | 128.0.0.0       | 8,388,606    | 2,147,483,648 | /1           |
-|                 |              |               |              | 0.0.0.0         | 8,388,606    | 4,294,967,296 | /0           |
+| Subnet Mask     | No. of Hosts | No. of Addr   | CIDR         | Subnet Mask     | No. of Hosts  | No. of Addr   | CIDR         |
+| :-------------: | :----------: | :-----------: | :----------: | :-------------: | :-----------: | :-----------: | :----------: |
+| 255.255.255.252 | 2            | 4             | /30          | 255.254.0.0     | 131,070       | 131,072       | /15          |
+| 255.255.255.248 | 6            | 8             | /29          | 255.252.0.0     | 262,142       | 262,144       | /14          |
+| 255.255.255.240 | 14           | 16            | /28          | 255.248.0.0     | 524,286       | 524,288       | /13          |
+| 255.255.255.224 | 30           | 32            | /27          | 255.240.0.0     | 1,048,574     | 1,048,576     | /12          |
+| 255.255.255.192 | 62           | 64            | /26          | 255.224.0.0     | 2,097,150     | 2,097,152     | /11          |
+| 255.255.255.128 | 126          | 128           | /25          | 255.192.0.0     | 4,194,302     | 4,194,304     | /10          |
+| 255.255.255.0   | 254          | 256           | /24          | 255.128.0.0     | 8,388,606     | 8,388,608     | /9           |
+| 255.255.254.0   | 510          | 512           | /23          | 255.0.0.0       | 16,777,214    | 16,777,216    | /8           |
+| 255.255.252.0   | 1,022        | 1,024         | /22          | 254.0.0.0       | 33,554,430    | 33,554,432    | /7           |
+| 255.255.248.0   | 2,046        | 2,048         | /21          | 252.0.0.0       | 67,108,862    | 67,108,864    | /6           |
+| 255.255.240.0   | 4,094        | 4,096         | /20          | 248.0.0.0       | 134,217,726   | 134,217,728   | /5           |
+| 255.255.224.0   | 8,190        | 8,192         | /19          | 240.0.0.0       | 268,435,454   | 268,435,456   | /4           |
+| 255.255.192.0   | 16,382       | 16,384        | /18          | 224.0.0.0       | 536,870,910   | 536,870,912   | /3           |
+| 255.255.128.0   | 32,766       | 32,768        | /17          | 192.0.0.0       | 1,073,741,822 | 1,073,741,824 | /2           |
+| 255.255.0.0     | 65,534       | 65,536        | /16          | 128.0.0.0       | 2,147,483,646 | 2,147,483,648 | /1           |
+|                 |              |               |              | 0.0.0.0         | 4,294,967,294 | 4,294,967,296 | /0           |
 
 #### Gateways
 Gateway is a network device that connects two different networks. They manage the traffic for the data packets sent, acting as a "gate" to determine where the packets are routed to and so on.<br>
@@ -234,32 +234,58 @@ Solutions for Net Practice Levels:
 <details>
 <summary>Level 3:</summary>
 <img src="/src/levels/level-03.png">
+- Here we have 3 devices and a switch. The switch just passes on the data packets, so we can ignore that.
+- Same as before, we just configure so that the devices are in the same network.
 </details>
 <details>
 <summary>Level 4:</summary>
 <img src="/src/levels/level-04.png">
+- Here we have a router and 2 other devices. The interfaces at the routers are the different networks that the router is connected to.
+- As before, we just configure so that the devices are in the same network.
+    - But for the router, we need to make sure that the interface that we are configuring has to be in a different network as the other interfaces on the router.
 </details>
 <details>
 <summary>Level 5:</summary>
 <img src="/src/levels/level-05.png">
+- Here we are connecting 2 devices to a router. We also need to form a connection for the 2 devices on different networks.
+    - Here we are also introduced to the routing table. So we will have to configure the default route for data to pass through.
+    - We do this by setting up the the router interface in the network as the default route for the data to pass through.
+- The router would then be able to check the destination of the data packet and pass it to the valid network (if applicable) it is in.
 </details>
 <details>
 <summary>Level 6:</summary>
 <img src="/src/levels/level-06.png">
+- Hello Internet, here we have to set up a device to communicate with the Internet.
+- Mainly we need to properly set up the routing table. We do this by:
+    - Setup default gateways for the router and device.
+    - Setup the destination for the Internet to point to the device's network
 </details>
 <details>
 <summary>Level 7:</summary>
 <img src="/src/levels/level-07.png">
+- Nothing new other than we are connecting 2 routers together and setting up the routing table for both of them.
+- We just have to make sure that the devices are in **different** networks or subnets for it to work.
 </details>
 <details>
 <summary>Level 8:</summary>
 <img src="/src/levels/level-08.png">
+- Seems normal, setting up the networks and routing table. But we need to be careful of the given routing table for the Internet.
+    - To give Internet access to both Host C and D, we need to make sure that their subnets are within the range of the destination.
+    - We would also need to make sure that those subnets are a different subnet to the connected routers.
+        - In the example we could see that the routers use x.x.x.60 to 64 within /30. And the Internet access is given to x.x.x.0/26, so 0 to 64.
+        - With this information, we would know that the hosts would need to be in network between x.x.x.0 to 60. Also set up submask so both are in different subnet.
 </details>
 <details>
 <summary>Level 9:</summary>
 <img src="/src/levels/level-09.png">
+- Big graph, but it uses the same concept as all the previous levels. We just need to be aware of the given IP Addresses and submasks.
+    - Things we would need to take note of is:
+        - Interface R23 uses submask /18, so we'll need to set up Interface R22 and Host C outside of that subnet.
+        - In the image above, I've set up so that they are under the same network within the /16 range. So I would use one less routing on the table.
 </details>
 <details>
 <summary>Level 10:</summary>
 <img src="/src/levels/level-10.png">
+- Most information is given here, so it's not that big of a deal.
+- This is similar to level 8, where we need to make sure that subnets don't intersect with each other, especially for Host 3 and 4.
 </details>
