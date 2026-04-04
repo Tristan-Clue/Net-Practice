@@ -178,7 +178,7 @@ To subnet, we manipulate the host portion of the address, network portion will r
 
 #### Subnet Cheat Sheet
 | Subnet Mask     | No. of Hosts | No. of Addr  | CIDR         |
-| :-------------: | :----------: | :----------: | :----------: |
+|  -------------  | :----------: | :----------: | :----------: |
 | 255.255.255.252 | 2            | 4            | /30          |
 | 255.255.255.248 | 6            | 8            | /29          |
 | 255.255.255.240 | 14           | 16           | /28          |
