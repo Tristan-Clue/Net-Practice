@@ -176,6 +176,17 @@ To subnet, we manipulate the host portion of the address, network portion will r
 > If you noticed, you'll realize that the leftmost bit of the host part is the indication of the subnet. Since that's the bit that will indicate the subnet id. The number of subnet is equivalent to 2 to the power of bits used for subnetting<br> i.e 2 bits used == 4 subnets, etc...
 > Also one thing to note when it comes to subnetting, each subnets are required to waste 2 IP addresses, which is the first and the last allocated address (Subnet-1 192.168.5.0 and 192.168.5.127), these are used as the network ID and the broadcast address for the subnet.
 
+#### Subnet Cheat Sheet (For class C)
+| Subnet Mask     | No. of Hosts | No. of Addr  | CIDR         |
+| :-------------: | :----------: | :----------: | :----------: |
+| 255.255.255.252 | 2            | 4            | /30          |
+|
+|
+|
+|
+|
+|
+
 #### Gateways
 Gateway is a network device that connects two different networks. They manage the traffic for the data packets sent, acting as a "gate" to determine where the packets are routed to and so on.<br>
 A default gateway can be described as a route for when the data packet's routing information is not found within the routing table for the device, i.e, the host not knowing where to send the data packets.<br>
@@ -203,31 +214,43 @@ Solutions for Net Practice Levels:
 <details>
 <summary>Level 1:</summary>
 <img src="/src/levels/level-01.png">
+- Just 2 sets of devices connected to each other. So configure the addresses to be in the same network for each pair.
 </details>
 <details>
 <summary>Level 2:</summary>
+<img src="/src/levels/level-02.png">
+- Here we are introduced to **Subnet Mask**, so instead of just configuring the IP addresses to the same network, we must also make sure that the address is within the same subnet.
+- So based of the given subnet mask, we just have to calculate which subnet it is in and configure the IP address of the respective device.
 </details>
 <details>
 <summary>Level 3:</summary>
+<img src="/src/levels/level-03.png">
 </details>
 <details>
 <summary>Level 4:</summary>
+<img src="/src/levels/level-04.png">
 </details>
 <details>
 <summary>Level 5:</summary>
+<img src="/src/levels/level-05.png">
 </details>
 <details>
 <summary>Level 6:</summary>
+<img src="/src/levels/level-06.png">
 </details>
 <details>
 <summary>Level 7:</summary>
+<img src="/src/levels/level-07.png">
 </details>
 <details>
 <summary>Level 8:</summary>
+<img src="/src/levels/level-08.png">
 </details>
 <details>
 <summary>Level 9:</summary>
+<img src="/src/levels/level-09.png">
 </details>
 <details>
 <summary>Level 10:</summary>
+<img src="/src/levels/level-10.png">
 </details>
